@@ -70,4 +70,18 @@ public class User {
     public void setContent(String content) {
         this.content = content;
     }
+
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", sex=" + sex +
+                ", ctime=" + ctime +
+                ", content='" + content + '\'' +
+                '}';
+    }
 }

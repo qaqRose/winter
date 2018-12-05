@@ -33,6 +33,9 @@ public class UserServiceTest {
         // 自动生成接口调用
         User user2 = userService.getMapper().selectByPrimaryKey(1);
         System.out.println(user2.getNickname());
+
+
+        System.out.println(userVO);
     }
 
 }

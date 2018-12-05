@@ -16,4 +16,11 @@ public class UserVO extends User {
     public void setBooks(List<Book> books) {
         this.books = books;
     }
+
+    @Override
+    public String toString() {
+        return "UserVO{" +
+                "books=" + books +
+                "} " + super.toString();
+    }
 }

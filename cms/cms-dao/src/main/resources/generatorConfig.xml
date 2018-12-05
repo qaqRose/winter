@@ -34,5 +34,6 @@
         <!-- 需要映射的表 -->
         <table tableName="user" domainObjectName="User"></table>
         <table tableName="book" domainObjectName="Book"></table>
+
     </context>
 </generatorConfiguration>
