@@ -1,6 +1,8 @@
 package com.qaq.cms.model;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     private Integer id;
 
     private String username;
@@ -14,6 +16,8 @@ public class User {
     private Long ctime;
 
     private String content;
+
+    private static final long serialVersionUID = 1L;
 
     public Integer getId() {
         return id;
@@ -71,17 +75,20 @@ public class User {
         this.content = content;
     }
 
-
     @Override
     public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", nickname='" + nickname + '\'' +
-                ", sex=" + sex +
-                ", ctime=" + ctime +
-                ", content='" + content + '\'' +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append(getClass().getSimpleName());
+        sb.append(" [");
+        sb.append("Hash = ").append(hashCode());
+        sb.append(", id=").append(id);
+        sb.append(", username=").append(username);
+        sb.append(", password=").append(password);
+        sb.append(", nickname=").append(nickname);
+        sb.append(", sex=").append(sex);
+        sb.append(", ctime=").append(ctime);
+        sb.append(", content=").append(content);
+        sb.append("]");
+        return sb.toString();
     }
 }

@@ -1,8 +1,7 @@
 package com.qaq.cms.mapper;
 
-import com.qaq.cms.model.UserVO;
 import com.qaq.cms.model.User;
-import org.springframework.stereotype.Repository;
+import com.qaq.cms.model.UserVO;
 
 import java.util.List;
 import java.util.Map;

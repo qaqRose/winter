@@ -1,4 +1,4 @@
-package com.qaq.cms.util;
+package com.qaq.common.util;
 
 /**
  * 分页实体类
